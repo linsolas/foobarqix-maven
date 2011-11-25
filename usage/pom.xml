@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>fr.linsolas.foobarqix</groupId>
+    <artifactId>foobarqix-mvn-usage</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>foobarqix-maven-plugin usage</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>fr.linsolas.foobarqix</groupId>
+                <artifactId>foobarqix-maven-plugin</artifactId>
+                <version>1.0</version>
+                <configuration>
+                    <from>1</from>
+                    <to>100</to>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>foobarqix</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
